@@ -1,0 +1,117 @@
+a,p,h1,h2,h3,h4,h5,li{
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+}
+
+a{color: #000;}
+li{list-style-type: none}
+/* ul{display: flex;} */
+
+*{padding: 0;margin: 0;}
+
+.p-10{padding: 10px;}
+.p-20{padding: 20px;}
+
+.m-10{margin:10px}
+.m-20{margin:20px}
+
+.font-small{font-size: 0.8rem;}
+.font-medium{font-size: 1rem;}
+.font-big{font-size: 1.2rem;}
+
+.txtPrimario{color: grey;}
+.txtSecundario{color: black;}
+.txtProducto{
+    width: 95%;
+    text-align:center;
+    color: black;
+}
+
+.bordeGrilla{
+    border: solid 3px blue;
+}
+
+.producto{
+    display: flex;
+    flex-wrap: wrap;
+    transition: scale 1s;
+}
+
+.bgGradienteFondo{
+    background: rgba(71, 205, 134, 1.0);
+    background: -webkit-linear-gradient(bottom, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
+    background: -moz-linear-gradient(bottom, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
+    background: linear-gradient(to top, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
+    }
+    
+.bgGradienteRadial{
+    background: rgba(74, 216, 125, 1.0);
+    background: -webkit-radial-gradient(center, rgba(74, 216, 125, 1.0), rgba(105, 189, 103, 1.0));
+    background: -moz-radial-gradient(center, rgba(74, 216, 125, 1.0), rgba(105, 189, 103, 1.0));
+    background: radial-gradient(ellipse at center, rgba(74, 216, 125, 1.0), rgba(105, 189, 103, 1.0));
+}
+.bgRed{
+    background-color: red;
+}
+.bgBlue{
+    background-color: blue;
+}
+.center{
+    display: grid;
+    place-items: center;
+}
+.left{
+    display: grid;
+    place-items: left;
+}
+
+.navbar-brand img{
+    max-width: 100px;
+}
+
+footer{
+    text-align: center;
+    border-top: solid 1px;
+}
+
+.col-lg-12,.col-lg-6{padding-right: 0;padding-left: 0;}
+
+/* vista desktop */
+@media only screen and (min-width: 1024px){
+    .navbar-expand-lg .navbar-collapse{
+        justify-content:center;
+    }
+    .footerFlex{display: flex;justify-content: space-around;}
+    }
+    nav{border-bottom: solid 1px;}
+    .producto:hover{
+        scale: 105%;
+    }
+
+
+/* vista mobile */
+@media only screen and (max-width: 767px){
+	.footerFlex{display: flex;flex-direction: column;}
+    nav{border-bottom: solid 1px;}
+    .aside{
+        display: none;
+    }
+    .categoria{
+        padding: 10px;
+    }
+    .banner{
+        grid-area: banner;
+        display: flex;
+        justify-content: center;
+        /* padding: 20px; */
+    }
+    .banner img{
+        max-width: 100%;
+    }
+    main iframe{
+        max-width: 90%;
+    }
+    main form li textarea{
+        max-width: 50%;
+    }
+ }
