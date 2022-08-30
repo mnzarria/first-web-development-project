@@ -50,6 +50,16 @@ li{list-style-type: none}
     background: -moz-radial-gradient(center, rgba(74, 216, 125, 1.0), rgba(105, 189, 103, 1.0));
     background: radial-gradient(ellipse at center, rgba(74, 216, 125, 1.0), rgba(105, 189, 103, 1.0));
 }
+
+    
+.bgGradienteRadial{
+/* Created with https://www.css-gradient.com */
+background: rgba(122, 190, 94, 1.0);
+background: -webkit-radial-gradient(center, rgba(122, 190, 94, 1.0), rgba(49, 130, 80, 1.0));
+background: -moz-radial-gradient(center, rgba(122, 190, 94, 1.0), rgba(49, 130, 80, 1.0));
+background: radial-gradient(ellipse at center, rgba(122, 190, 94, 1.0), rgba(49, 130, 80, 1.0));
+}
+
 .bgRed{
     background-color: red;
 }
@@ -82,15 +92,20 @@ footer{
         justify-content:center;
     }
     .footerFlex{display: flex;justify-content: space-around;}
-    }
+    
     nav{border-bottom: solid 1px;}
     .producto:hover{
         scale: 105%;
+        border: solid black 1px;
     }
+    .card:hover{
+        border-color: black;
+    }
+}
 
 
 /* vista mobile */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 1023px){
 	.footerFlex{display: flex;flex-direction: column;}
     nav{border-bottom: solid 1px;}
     .aside{
@@ -98,6 +113,8 @@ footer{
     }
     .categoria{
         padding: 10px;
+        display: flex;
+        justify-content: center;
     }
     .banner{
         grid-area: banner;

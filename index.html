@@ -7,16 +7,20 @@
     
     <!--    CSS BOOTSTRAP-->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+
+
     
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilo.css">
+    
 
     <title>PLANTERHOUSE</title>
     <link rel="shortcut icon" href="./media/img/favicon.png">
 </head>
 <body class="bgGradienteRadial">
     <!-- INICIO LOGO + NAV -->
-    <div class="container-fluid">
+    <div class="container-fluid sticky-top">
         <header class="row">
             <div class="col-lg-12 col-xs-12">
                 <nav class="navbar navbar-expand-lg navbar-light bgGradienteFondo">
@@ -58,11 +62,9 @@
     <!-- INICIO CONTENIDO -->
     <main>
             <!-- Carrousel -->
-    <div class="container-fluid p-20">
+    <div class="container-fluid p-10">
         <div class="row">
-            <div class="col-lg-1">
-            </div>
-            <div class="col-lg-10 col-xs-12">
+            <div class="col-lg-12 col-xs-12">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -112,18 +114,45 @@
             <div class="container-fluid p-20">
                 <div class="row">
                     <div class="col-lg-12 col-xs-12">
-                        <h3 class="center">CATEGORIAS</h3>
+                        <h2 class="center">MODELOS</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-xs-12 categoria">
-                        <img src="./media/img/suculentasApiladas.jpg" alt="" class="img-fluid">
+                    <div class="col-lg-4 col-xs-12 categoria center">
+                        <!-- <img src="./media/img/suculentasApiladas.jpg" alt="" class="img-fluid"> -->
+                        
+                        <!-- Prueba Cards-->
+
+                        <div class="card bgGradienteFondo" style="width: 18rem;">
+                            <img src="./media/img/IMG_5796.jpg" class="card-img-top" alt="...">
+                            <div class="card-body center">
+                              <h5 class="card-title">Suculentas</h5>
+                              <p class="card-text">Tenemos una gran variedad de materiales, tamaños y colores</p>
+                              <a href="./pages/productos.html" class="btn btn-dark">Ver</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-xs-12 categoria">
-                        <img src="./media/img/floreroAzul.jpg" alt="" class="img-fluid">
+                    <div class="col-lg-4 col-xs-12 categoria center">
+                        <!-- <img src="./media/img/floreroAzul.jpg" alt="" class="img-fluid"> -->
+                        <div class="card bgGradienteFondo" style="width: 18rem;">
+                            <img src="./media/img/IMG_5814.png" class="card-img-top" alt="...">
+                            <div class="card-body center">
+                              <h5 class="card-title">Hexa</h5>
+                              <p class="card-text">Tenemos una gran variedad de materiales, tamaños y colores</p>
+                              <a href="./pages/productos.html" class="btn btn-dark">Ver</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-xs-12 categoria">
-                        <img src="./media/img/hexaConPlantas.jpg" alt="" class="img-fluid">
+                    <div class="col-lg-4 col-xs-12 categoria center">
+                        <!-- <img src="./media/img/hexaConPlantas.jpg" alt="" class="img-fluid"> -->
+                        <div class="card bgGradienteFondo" style="width: 18rem;">
+                            <img src="./media/img/IMG_5873.png" class="card-img-top" alt="...">
+                            <div class="card-body center">
+                              <h5 class="card-title">Floreros</h5>
+                              <p class="card-text">Tenemos una gran variedad de materiales, tamaños y colores</p>
+                              <a href="./pages/productos.html" class="btn btn-dark">Ver</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
