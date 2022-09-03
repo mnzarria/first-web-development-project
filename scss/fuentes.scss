@@ -1,0 +1,19 @@
+$pDesktop:1rem;
+$fontFamily: '"Montserrat",sans-serif';
+
+
+.col-lg-10{
+	ol{
+	font:{
+		size:$pDesktop;
+		family:$fontFamily;
+		// weight:bold;
+		}
+	}
+
+} 
+
+a{
+	color:black;
+}
+

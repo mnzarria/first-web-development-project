@@ -1,0 +1,89 @@
+.col-lg-10 ol {
+  font-size: 1rem;
+  font-family: '"Montserrat",sans-serif'; }
+
+a {
+  color: black; }
+
+/*GRADIENTES ENCABEZADO Y PIE*/
+header, footer {
+  background: #47cd86;
+  background: -webkit-linear-gradient(bottom, #47cd86, #358734);
+  background: -moz-linear-gradient(bottom, #47cd86, #358734);
+  background: linear-gradient(to top, #47cd86, #358734); }
+
+/*GRADIENTE BODY*/
+body {
+  background: #7abe5e;
+  background: -webkit-radial-gradient(center, #7abe5e, #318250);
+  background: -moz-radial-gradient(center, #7abe5e, #318250);
+  background: radial-gradient(ellipse at center, #7abe5e, #318250); }
+
+.col-lg-10 ol {
+  font-size: 1rem;
+  font-family: '"Montserrat",sans-serif'; }
+
+a {
+  color: black; }
+
+.col-lg-10 ol {
+  font-size: 1rem;
+  font-family: '"Montserrat",sans-serif'; }
+
+a {
+  color: black; }
+
+/*GRADIENTES ENCABEZADO Y PIE*/
+header, footer {
+  background: #47cd86;
+  background: -webkit-linear-gradient(bottom, #47cd86, #358734);
+  background: -moz-linear-gradient(bottom, #47cd86, #358734);
+  background: linear-gradient(to top, #47cd86, #358734); }
+
+/*GRADIENTE BODY*/
+body {
+  background: #7abe5e;
+  background: -webkit-radial-gradient(center, #7abe5e, #318250);
+  background: -moz-radial-gradient(center, #7abe5e, #318250);
+  background: radial-gradient(ellipse at center, #7abe5e, #318250); }
+
+.titulo__principal {
+  margin: 20px; }
+  .titulo__principal--color {
+    color: #212529; }
+
+li {
+  list-style: none; }
+
+a, p, h1, h2, h3, h4, h5, li {
+  text-decoration: none;
+  font-family: "Montserrat",sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+header {
+  text-align: center;
+  border-bottom: solid 1px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  header .navbar-collapse {
+    justify-content: center; }
+  header img {
+    max-width: 80px; }
+
+main h4, main ol, main img {
+  padding: 10px; }
+
+.img-center {
+  display: grid;
+  place-items: center; }
+
+footer {
+  text-align: center;
+  border-top: solid 1px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  footer img {
+    max-width: 80px; }
