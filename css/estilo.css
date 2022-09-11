@@ -27,37 +27,12 @@ li{list-style-type: none}
     color: black;
 }
 
-.bordeGrilla{
-    border: solid 3px blue;
-}
-
 .producto{
     display: flex;
     flex-wrap: wrap;
     transition: scale 1s;
 }
 
-.bgGradienteFondo{
-    background: rgba(71, 205, 134, 1.0);
-    background: -webkit-linear-gradient(bottom, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
-    background: -moz-linear-gradient(bottom, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
-    background: linear-gradient(to top, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
-    }
-       
-.bgGradienteRadial{
-
-background: rgba(122, 190, 94, 1.0);
-background: -webkit-radial-gradient(center, rgba(122, 190, 94, 1.0), rgba(49, 130, 80, 1.0));
-background: -moz-radial-gradient(center, rgba(122, 190, 94, 1.0), rgba(49, 130, 80, 1.0));
-background: radial-gradient(ellipse at center, rgba(122, 190, 94, 1.0), rgba(49, 130, 80, 1.0));
-}
-
-.bgRed{
-    background-color: red;
-}
-.bgBlue{
-    background-color: blue;
-}
 .center{
     display: grid;
     place-items: center;
@@ -68,7 +43,7 @@ background: radial-gradient(ellipse at center, rgba(122, 190, 94, 1.0), rgba(49,
 }
 
 .navbar-brand img{
-    max-width: 100px;
+    max-width: 60px;
 }
 
 footer{
@@ -78,49 +53,3 @@ footer{
 
 .col-lg-12,.col-lg-6{padding-right: 0;padding-left: 0;}
 
-/* vista desktop */
-@media only screen and (min-width: 1024px){
-    .navbar-expand-lg .navbar-collapse{
-        justify-content:center;
-    }
-    .footerFlex{display: flex;justify-content: space-around;}
-    
-    nav{border-bottom: solid 1px;}
-    .producto:hover{
-        scale: 105%;
-        border: solid black 1px;
-    }
-    .card:hover{
-        border-color: black;
-    }
-}
-
-
-/* vista mobile */
-@media only screen and (max-width: 1023px){
-	.footerFlex{display: flex;flex-direction: column;}
-    nav{border-bottom: solid 1px;}
-    .aside{
-        display: none;
-    }
-    .categoria{
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    .banner{
-        grid-area: banner;
-        display: flex;
-        justify-content: center;
-        /* padding: 20px; */
-    }
-    .banner img{
-        max-width: 100%;
-    }
-    main iframe{
-        max-width: 90%;
-    }
-    main form li textarea{
-        max-width: 50%;
-    }
- }
