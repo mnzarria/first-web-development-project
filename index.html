@@ -8,6 +8,9 @@
     <!-- CSS BOOTSTRAP -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     
+    <!-- AOS ANIMACIONES -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -69,13 +72,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="./media/img/estante1.jpg" class="d-block w-100" alt="...">
+                    <img src="./media/img/estante1.jpg" class="d-block w-100" alt="foto estante con productos">
                     </div>
                     <div class="carousel-item">
-                    <img src="./media/img/estante2.jpg" class="d-block w-100" alt="...">
+                    <img src="./media/img/estante2.jpg" class="d-block w-100" alt="foto estante con productos">
                     </div>
                     <div class="carousel-item">
-                        <img src="./media/img/estante3.jpg" class="d-block w-100" alt="...">
+                        <img src="./media/img/estante3.jpg" class="d-block w-100" alt="foto estante con productos">
                         </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -93,13 +96,13 @@
     <div class="row">
         <!-- INICIO ASIDE -->
         <div class="col-lg-2 center aside">
-            <a href="https://www.coderhouse.com/" target="_blank">
+            <a href="https://www.coderhouse.com/" target="_blank" data-aos="fade-right" data-aos-duration="500">
                 <img class="img-fluid p-10"src="media/img/promo1.jpg" alt="promo coder">
             </a>
-            <a href="https://www.coderhouse.com/" target="_blank">
+            <a href="https://www.coderhouse.com/" target="_blank" data-aos="fade-right" data-aos-duration="1000">
                 <img class="img-fluid p-10"src="media/img/promo2.jpg" alt="promo coder">
             </a>
-            <a href="https://www.coderhouse.com/" target="_blank">
+            <a href="https://www.coderhouse.com/" target="_blank" data-aos="fade-right" data-aos-duration="1500">
                 <img class="img-fluid p-10"src="media/img/promo1.jpg" alt="promo coder">
             </a>    
         </div>
@@ -115,10 +118,6 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-xs-12 categoria center">
-                        <!-- <img src="./media/img/suculentasApiladas.jpg" alt="" class="img-fluid"> -->
-                        
-                        <!-- Prueba Cards-->
-
                         <div class="card" style="width: 18rem;">
                             <img src="./media/img/IMG_5796.jpg" class="card-img-top" alt="...">
                             <div class="card-body center">
@@ -129,7 +128,6 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-xs-12 categoria center">
-                        <!-- <img src="./media/img/floreroAzul.jpg" alt="" class="img-fluid"> -->
                         <div class="card" style="width: 18rem;">
                             <img src="./media/img/IMG_5814.png" class="card-img-top" alt="...">
                             <div class="card-body center">
@@ -217,7 +215,10 @@
         </footer>
     </div>
     <!-- FIN FOOTER -->    
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  		AOS.init();
+	</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>

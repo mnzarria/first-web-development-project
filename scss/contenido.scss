@@ -1,8 +1,9 @@
 @import "colores";
 
-// $centrar:center;
-// $h1Desk:50px;
-// $h1Mob:35px;
+body{
+    overflow-x: hidden;
+
+}
 .titulo{  
 	&__principal{
         margin: 20px;
@@ -54,3 +55,28 @@ footer{
     
 }
 
+.producto{
+    display: flex;
+    flex-wrap: wrap;
+    transition: scale 1s;
+}
+
+.center{
+    display: grid;
+    place-items: center;
+}
+.left{
+    display: grid;
+    place-items: left;
+}
+
+.navbar-brand img{
+    max-width: 60px;
+}
+
+footer{
+    text-align: center;
+    border-top: solid 1px;
+}
+
+.col-lg-12,.col-lg-6{padding-right: 0;padding-left: 0;}
