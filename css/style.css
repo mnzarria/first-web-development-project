@@ -257,9 +257,7 @@ main h4, main ol, main img {
 
 footer {
   text-align: center;
-  border-top: solid 1px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  border-top: solid 1px #318250; }
   footer img {
     max-width: 80px; }
 
@@ -278,10 +276,6 @@ footer {
 
 .navbar-brand img {
   max-width: 60px; }
-
-footer {
-  text-align: center;
-  border-top: solid 1px; }
 
 .col-lg-12, .col-lg-6 {
   padding-right: 0;

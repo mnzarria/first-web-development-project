@@ -45,14 +45,12 @@ main{
 
 footer{
     text-align: center;
-    border-top: solid 1px;
-    padding-top:10px;
-    padding-bottom: 10px;
+    border-top: solid 1px map-get($coloresGrad, grad-B-2);
+    // padding-top:10px;
+    // padding-bottom: 10px;
     img{
         max-width: 80px;
     }
-    
-    
 }
 
 .producto{
@@ -74,9 +72,6 @@ footer{
     max-width: 60px;
 }
 
-footer{
-    text-align: center;
-    border-top: solid 1px;
-}
+
 
 .col-lg-12,.col-lg-6{padding-right: 0;padding-left: 0;}
