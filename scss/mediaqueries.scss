@@ -12,9 +12,12 @@
     .card:hover{
         border-color: black;
     }
+    header{
+        a{
+            padding-left: 5rem;
+        }
+    }
 }
-
-
 /* vista mobile */
 @media only screen and (max-width: 1023px){
 	.footerFlex{display: flex;flex-direction: column;}
@@ -39,5 +42,9 @@
     }
     main form li textarea{
         max-width: 50%;
+    }
+    .filaTriple {
+        flex-direction: column;
+        align-items: center;
     }
  }

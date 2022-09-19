@@ -3,26 +3,21 @@ $fontFamily: '"Montserrat",sans-serif';
 
 
 .col-lg-10{
-	ol{
-	font:{
-		size:$pDesktop;
-		family:$fontFamily;
-		// weight:bold;
+	ol {
+		font: {
+			size:$pDesktop;
+			family:$fontFamily;
 		}
 	}
-
 } 
 
-a{
-	color:black;
-}
+a{color:black;}
 
 a,p,h1,h2,h3,h4,h5,li{
     text-decoration: none;
     font-family: "Montserrat",sans-serif;
 }
 
-a{color: #000;}
 li{list-style-type: none}
 /* ul{display: flex;} */
 
@@ -44,4 +39,14 @@ li{list-style-type: none}
     width: 95%;
     text-align:center;
     color: black;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.txtPrecio{
+    width: 95%;
+    text-align:center;
+    color: black;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
 }

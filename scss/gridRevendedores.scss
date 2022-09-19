@@ -1,0 +1,96 @@
+/*GRID REVENDEDORES*/
+body{
+    overflow-x: hidden;
+}
+.gridRevendedores{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "header header header header header header header header header header"
+    "main main main main main main main main main main"
+    "banner banner banner banner banner banner banner banner banner banner"
+    "footer footer footer footer footer footer footer footer footer footer";
+    justify-content: center;
+}
+header{
+    grid-area: header;
+    border-bottom: solid 1px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    z-index: 5;
+}
+main{
+    grid-area: main;
+}
+.banner{
+    grid-area: banner;
+
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ul{
+    display: flex;
+}
+ul li{display: inline-block; position: relative;}
+ul ul{position: relative; display: none;}
+li a{display: flex; justify-content: center;}
+a{color: rgba(0,0,0,.5);}
+nav{
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    padding: 10px;
+    overflow: hidden;
+}
+nav li{
+    margin: 20px;
+}
+.grid-wrapper{
+    --auto-grid-min-size:16rem;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size),1fr));
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.vendedor{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+}
+.imgVendedor{
+    width: 95%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px){
+    header, nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    header{
+        position: inherit;
+    }
+    nav ul li{
+        margin: 8px;
+    }
+    main iframe{
+        max-width: 90%;
+    }
+    footer{
+        flex-direction: column;
+    }
+}

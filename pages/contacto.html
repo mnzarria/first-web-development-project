@@ -53,16 +53,36 @@
                 </nav>
             </div>
         </header>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="waves-header">
+                    <!--WAVES-->
+                    <div>
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(71,205,134,0.7)" />
+                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(53,135,52,0.5)" />
+                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(49,130,80,0.3)" />
+                            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(49, 130, 80, 1.0)" />
+                        </g>
+                        </svg>
+                    </div>
+                    <!--WAVES END-->
+                </div>
+            </div>
+        </div>
     </form>
     <!-- FIN LOGO + NAV -->
     <!-- INICIO CONTENIDO-->
     <main>
-        <div class="row left m-20">
-            <h1>Contacto</h1>                
-        </div>
         <div class="container-fluid">
-            <div class="row center">
-                <div class="col-lg-11 col-xs-11">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 col-xs-11">
+                    <h1 class="m-20">Contacto</h1>            
                     <div class="input-group p-2">
                         <span class="input-group-text" id="basic-addon1">Nombre completo</span>
                         <input type="text" class="form-control" placeholder="Luciana Esposito" aria-label="Username" aria-describedby="basic-addon1">
@@ -105,28 +125,36 @@
                         <button class="btn btn-dark" type="reset">Limpiar</button>
                     </div>
                 </div>
+                <div class="col-lg-5 m-20 aside">
+                    <img class="img-fluid" src="..//media/img/variasconplanta.png" alt="">
+                </div>
             </div>
         </div>
     </main>
     <!-- FIN CONTENIDO-->
     <!-- INICIO FOOTER -->
-    <div class="container-fluid">
-        <footer class="row bgGradienteFondo">
-            <div class="col-lg-4 col-xs-12 center">
+    <div class="container-fluid bg-dark text-white">
+        <footer class="row">
+            <div class="col-lg-5 col-xs-12 center text-secondary text-left">
                 <a class="navbar-brand" href="#">
                     <img src="../media/img/logo.png" alt="logo">
                 </a>
-              </div>
-              <div class="col-lg-4 col-xs-12 p-10">
+                <p class="ml-3">Nos dedicamos a la creación de objetos decorativos impresos en 3D. Esto nos permite producir de manera dinámica y amigable con nuestro planeta. Todos nuestros productos son elaborados en PLA, un plástico biodegradable de origen vegetal.</p>
+            </div>
+            <div class="col-lg-4 col-xs-12 p-10">
                 <h3>REDES SOCIALES</h3>
                 <li><a href="https://www.facebook.com/" target="_blank" class="rrss-facebook">Facebook</a></li>
                 <li><a href="https://www.instagram.com/coderhouse/" target="_blank" class="rrss-instagram">Instagram</a></li>
                 <li><a href="https://www.youtube.com/c/CoderHouse" target="_blank" class="rrss-youtube">Youtube</a></li>
-              </div>
-              <div class="col-lg-4 col-xs-12 p-10">
+            </div>
+            <div class="col-lg-3 col-xs-12 p-10">
                 <h3>CONTACTO</h3>
                 <li><a href="mailto:mnzarria@gmail.com">mnzarria@gmail.com</a></li>
-              </div>
+                <li><a href="#">+54 341 6121972</a></li>
+            </div>
+            <div class="col-lg-12 col-xs-12 bg-dark text-secondary">
+                <h6>Designed and built by MZ as Web Developing #36385 final project.</h6>
+            </div>
         </footer>
     </div>
     <!-- FIN FOOTER --> 
