@@ -2,9 +2,10 @@
 body{
     overflow-x: hidden;
     background-color: rgba(49, 130, 80, 1.0);
+    width: 100%;
 }
 *{padding: 0;margin: 0;}
-a,p,h1,h2,h3,h4,h5,li{
+a,p,h1,h2,h3,h4,h5,li,button{
     text-decoration: none;
     font-family: "Montserrat",sans-serif;
 }
@@ -20,10 +21,10 @@ a{color: rgba(0,0,0,.5);}
     place-items: center;
 }
 
-.gridRevendedores{
+.gridClientes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-rows: 10vh 75vh 15vh;
     grid-template-areas:
     "header header header header"
     "main main main main"
@@ -44,7 +45,6 @@ header{
     background: -moz-linear-gradient(bottom, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
     background: linear-gradient(to top, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
 }
-
 .gridMain{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -53,47 +53,76 @@ header{
     "nuevos nuevos viejos viejos";
     justify-content: center;
 }
-
 .nuevos{
     grid-area: nuevos;
     background-color: rgba(49, 130, 80, 1.0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 .viejos{
     grid-area: viejos;
     background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-.nuevos h1,a{
+.nuevos h1, .nuevos p{
     color: #333333;
+    padding: 30px;
 }
-.viejos h1,p{
-    color: rgba(49, 130, 80, 1.0);
-}
+.viejos i{
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-right: 20px;
 
+}
+.viejos h1,p,i{
+    color: rgba(49, 130, 80, 1.0);
+    padding: 30px;
+}
+.viejos h1, .nuevos h1{
+    font-size: 3rem;
+}
+.viejos p, .nuevos p{
+    font-size: 2rem;
+}
 
 .formContacto li{
     margin: 10px;
 }
 header .logo img, footer .logo img{
-    width: 70px;
+    width: 60px;
 }
 main{
     grid-area: main;
 }
-
 footer{
     grid-area: footer;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     flex-wrap: wrap;
     justify-content: space-around;
-    background: rgba(71, 205, 134, 1.0);
-    background: -webkit-linear-gradient(bottom, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
-    background: -moz-linear-gradient(bottom, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
-    background: linear-gradient(to top, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
+    background-color: #333333;
+    padding-top: 20px;
+    height: 100%;
+    z-index: 5;
 }
-
-
+footer li,h3{
+    color:white;
+}
+footer a{
+    color: grey;
+}
+footer .rrss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 nav{
     display: flex;
     justify-content: center;
@@ -109,17 +138,38 @@ nav li{
     header, nav ul{
         width: 100%;
         flex-direction: column;
+        text-align: center;
     }
     header{
         position: inherit;
+        margin-top: 10px;
     }
     nav ul li{
-        margin: 8px;
-    }
-    main iframe{
-        max-width: 90%;
+        margin: 5px;
     }
     footer{
+        width: 100%;
         flex-direction: column;
+        text-align: center;
     }
+    .gridClientes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 45vh 100vh 100vh 40vh;
+        grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "footer";
+        justify-content: center;
+    }
+    .gridMain{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh 100vh;
+        grid-template-areas:
+        "nuevos"
+        "viejos";
+        justify-content: center;
+    }    
 }
