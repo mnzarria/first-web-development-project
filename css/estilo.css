@@ -1,0 +1,125 @@
+/*GRID REVENDEDORES*/
+body{
+    overflow-x: hidden;
+    background-color: rgba(49, 130, 80, 1.0);
+}
+*{padding: 0;margin: 0;}
+a,p,h1,h2,h3,h4,h5,li{
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+}
+li{list-style-type: none}
+ul{display: flex;}
+ul li{display: inline-block; position: relative;}
+ul ul{position: relative; display: none;}
+li a{display: flex; justify-content: center;}
+a{color: rgba(0,0,0,.5);}
+
+.center{
+    display: grid;
+    place-items: center;
+}
+
+.gridRevendedores{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    justify-content: center;
+}
+header{
+    grid-area: header;
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    z-index: 5;
+    background: rgba(71, 205, 134, 1.0);
+    background: -webkit-linear-gradient(bottom, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
+    background: -moz-linear-gradient(bottom, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
+    background: linear-gradient(to top, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
+}
+
+.gridMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "nuevos nuevos viejos viejos";
+    justify-content: center;
+}
+
+.nuevos{
+    grid-area: nuevos;
+    background-color: rgba(49, 130, 80, 1.0);
+}
+.viejos{
+    grid-area: viejos;
+    background-color: #333333;
+}
+.nuevos h1,a{
+    color: #333333;
+}
+.viejos h1,p{
+    color: rgba(49, 130, 80, 1.0);
+}
+
+
+.formContacto li{
+    margin: 10px;
+}
+header .logo img, footer .logo img{
+    width: 70px;
+}
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgba(71, 205, 134, 1.0);
+    background: -webkit-linear-gradient(bottom, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
+    background: -moz-linear-gradient(bottom, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
+    background: linear-gradient(to top, rgba(71, 205, 134, 1.0), rgba(53, 135, 52, 1.0));
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    padding: 10px;
+    overflow: hidden;
+}
+nav li{
+    margin: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    header, nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    header{
+        position: inherit;
+    }
+    nav ul li{
+        margin: 8px;
+    }
+    main iframe{
+        max-width: 90%;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
