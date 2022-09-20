@@ -379,7 +379,8 @@ footer {
   header a {
     padding-left: 5rem; }
   .full-screen {
-    height: 90vh; } }
+    min-height: 90vh;
+    max-height: 120vh; } }
 
 /* vista mobile */
 @media only screen and (max-width: 1023px) {

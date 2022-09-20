@@ -18,7 +18,8 @@
         }
     }
     .full-screen{
-        height: 90vh;
+        min-height: 90vh;
+        max-height: 120vh;
     }
 }
 /* vista mobile */
